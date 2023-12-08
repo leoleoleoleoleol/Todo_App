@@ -3,7 +3,7 @@
 
 // 必要なライブラリとコンポーネントをインポート
 import React, { useState } from 'react';
-import TodoItem from './TodoItem';
+import TodoItem from './Todoitem';
 
 const TodoList = () => {
     // タスクと新しいタスク入力を管理するためのuseState
