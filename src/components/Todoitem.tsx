@@ -8,7 +8,7 @@ const TodoItem = (props: { task: string; toggleCompletion: () => void; }) => { /
             <span className="flex-1">{props.task}</span>
             {/* toggleCompletion関数をトリガーするボタン */}
             <button onClick={props.toggleCompletion} className="text-xl">
-                ✓
+                ✅
             </button>
         </div>
     );

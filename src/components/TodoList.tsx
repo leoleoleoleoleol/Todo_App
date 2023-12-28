@@ -34,14 +34,17 @@ const TodoList = () => {
     return (
         <div className="p-4">
             {/* 新しいタスクを追加するための入力フィールド */}
-            <input
+          
+            <button onClick={addTask}>Add</button>
+              <input
                 type="text"
                 placeholder="Add a task"
                 value={newTask}
                 onChange={(e) => setNewTask(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && addTask()}
-                className="p-2 border rounded w-full mb-8"
+                className="p-2 border rounded w-full mb-8"  
             />
+            
+            
             {/* タスクのリストをレンダリング */}
             <div>
                 {tasks.map((task, index) => (
